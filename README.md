@@ -18,3 +18,10 @@ Please be responsible in choosing how much of the original art and code to use.
 
 Absolutely no guarantees or warantees are provided about the fitness of this software
 for any purpose whatsoever. Use this at your own risk.
+
+## Warnings
+
+Please carefully review all FX hash rules before you publish your project.
+Using this template may or may not increase chances of moderation of your project.
+Artists are responsible for following the rules of the platforms on which they mint.
+If you need help understanding the the rules always ask before publishing or minting.
