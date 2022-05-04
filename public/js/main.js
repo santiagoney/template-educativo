@@ -2,7 +2,7 @@
     main.js by napoleonbonaparte.tez
        bajo licencia CC0
      
-        Este código est hecho para ser modificado
+        Este código está hecho para ser modificado
         Se desalienta la publicación de proyectos sin modificaciones 
         o con pocas modificaciones con respecto al código original
         
@@ -25,33 +25,36 @@ const nose_seed = Math.floor(fxrand()*2.5);
 const mouth_seed = Math.floor(fxrand()*3.5);
 
 //vamos a usar algunos colores aleatorios para la cara
-//aqu elegiremos los números que vamos a usar para esos colores aleatorios
+//aquí elegiremos los números que vamos a usar para esos colores aleatorios
 
 let color_seeds =[];
 // precisamos cuatro colores
-// a for loop is useful when you want to do something repetitively
+// for loop es útil cuando queremos que algo se repita
 for (i=0;i<4;i++) {
-    // the push method will add things to the end of the array (aka list)
+    //  el método push agregará cosas al final del arreglo (aka lista)
+   
     color_seeds.push(fxrand());
 }
 
-// in the helper code we use 360 as the basis for the hues 
-// so we'll use that here as well
+// vamos a usar 360 como número para el rango de matiz
+
 let hues = 360
 
-// lets create a big array of random variables to use to make some triangles
+// creemos una colección de variables aleatorias que usaremos para hacer algunos triángulos
+
 let random_seeds = [];
-// this time lets create an array with a random number of elements (between 5000 and 6000)
+// ahora creemos una colección con un nmero aleatorio de elementos (entre 5000 y 6000)
+
 for (i=0;i<5000+fxrand()*1000;i++) {
     random_seeds.push(fxrand());
 }
 
-// lets choose a number of shapes (triangles)
+// elijamos un número de formas (triángulos)
 const shapesNumber = 100+fxrand()*100;
 
 function preload() {
-    // Load all images
-    //  Here we use the p5 function loadImage
+    // cargar todas las imágenes
+    //  acá usaremos la función loadImage de p5js
     //  along with a helper function called piece
     //  check out the helper function code in ./js/functions.js
     //  here we are using string interpolation, notice the use of backticks
