@@ -1,31 +1,34 @@
 /*
     main.js by napoleonbonaparte.tez
-        Available under CC0
-        It is intended that users modify the code below
-        I endorse modereration of projects published with
-        little or no modification
-        Please use your best judgement
+       bajo licencia CC0
+     
+        Este código est hecho para ser modificado
+        Se desalienta la publicación de proyectos sin modificaciones 
+        o con pocas modificaciones con respecto al código original
+        
+        
 */
 
-// The built in project has only a head, eyes, nose, and mouth
-// We will use these variables to tell the computer which ones to draw
-// These variables are like placeholders for the images
+// El proyecto tiene incorporados una cabeza, ojos, nariz y boca
+// usaremos esas variables para decirle a la computadora cuáles ir dibujando
+// estas variables son donde van a residir las imágenes 
 let head,eyes,nose,mouth;
 
-// here we are going to select some random numbers to select our images
-// fxhash() is the variable we want to use.
-// const is used to indicate that these random variables will not change
+//acá vamos a elegir algunos números aleatorios para que escojan nuestras imágenes 
+
+// fxhash() es la variable a usar para esto
+// const es usado para indicar que estas variables aleatorias no van a cambiar 
 
 const head_seed = Math.floor(fxrand()*1.5);
 const eyes_seed = Math.floor(fxrand()*1.5);
 const nose_seed = Math.floor(fxrand()*2.5);
 const mouth_seed = Math.floor(fxrand()*3.5);
 
-// we are going to use some random colors for the face
-// here we select the numbers we will use for the random colors
+//vamos a usar algunos colores aleatorios para la cara
+//aqu elegiremos los números que vamos a usar para esos colores aleatorios
 
 let color_seeds =[];
-// we will need four colors
+// precisamos cuatro colores
 // a for loop is useful when you want to do something repetitively
 for (i=0;i<4;i++) {
     // the push method will add things to the end of the array (aka list)
